@@ -34,7 +34,7 @@ db.once("open", () => {
 });
 
 const app = express();
-const secret1 = Process.env.SECRET || "thisismysecret";
+const secret1 = process.env.SECRET || "thisismysecret";
 
 const store = MongoDBStore.create({
     mongoUrl: dbURL,
