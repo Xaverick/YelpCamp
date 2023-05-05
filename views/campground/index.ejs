@@ -6,10 +6,10 @@
         <div class="card mb-3 ">
             <div class="row">
                 <div class="col-md-4">
-                    <% if(campground.images[0].url){ %>
-                    <img crossorigin="anonymous" class = "img-fluid" src="<%= campground.images[0].url%>" alt="">
+                    <% if(campground.images[0] != undefined && campground.images[0].url){ %>
+                        <img crossorigin="anonymous" class = "img-fluid" src="<%= campground.images[0].url %>" alt="">
                     <% } else{ %>
-                        <img  crossorigin="anonymous"class="img-fluid" src="car_glaciers_scifi_137640_1280x720.jpg" alt="">
+                        <img  crossorigin="anonymous"class="img-fluid" src="https://res.cloudinary.com/dkbsrsblc/image/upload/v1683290001/black-linear-photo-camera-logo-600w-622639151_rumwrp.webp" alt="">
                     <% } %>    
                 </div>
                 <div class="col-md-8">
@@ -24,8 +24,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
         
     <% } %>
